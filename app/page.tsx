@@ -1,7 +1,10 @@
+// 1. Instale o pacote 'framer-motion' para animações suaves de app nativo:
+// npm install framer-motion
+
 "use client";
 
 import { useState, useEffect } from "react";
-// CORREÇÃO 1: Adicionado 'Zap' nas importações
+import { motion, AnimatePresence } from "framer-motion";
 import {
   CheckCircle2,
   Circle,
@@ -12,11 +15,13 @@ import {
   Target,
   Info,
   Zap,
+  ChevronRight,
 } from "lucide-react";
 
 export default function Home() {
   const [data, setData] = useState<any>(null);
   const [completed, setCompleted] = useState<string[]>([]);
+  const [activeTab, setActiveTab] = useState("treino"); // 'rotina' | 'treino' | 'dieta'
 
   const diasSemana: { [key: number]: string } = {
     0: "DOM",
@@ -36,13 +41,7 @@ export default function Home() {
       .catch((err) => console.error("Erro ao carregar JSON:", err));
 
     const saved = localStorage.getItem("dieta-progresso");
-    if (saved) {
-      try {
-        setCompleted(JSON.parse(saved));
-      } catch (e) {
-        console.error("Erro no parse do localStorage");
-      }
-    }
+    if (saved) setCompleted(JSON.parse(saved));
   }, []);
 
   const toggleTask = (id: string) => {
@@ -55,226 +54,230 @@ export default function Home() {
 
   if (!data)
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-          <p className="mt-4 text-slate-500 font-medium">
-            Sincronizando Plano...
-          </p>
-        </div>
+      <div className="h-screen flex items-center justify-center bg-slate-950">
+        <motion.div
+          animate={{ scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+          className="text-blue-500"
+        >
+          <Zap size={40} fill="currentColor" />
+        </motion.div>
       </div>
     );
 
   const treinoDoDia = data.Nutricao.find((t: any) => t.Dia === hoje);
 
   return (
-    <div className="min-h-screen bg-slate-50 pb-24">
-      <header className="bg-white p-6 shadow-sm sticky top-0 z-20 border-b border-slate-100">
-        <div className="flex justify-between items-center">
+    <div className="min-h-screen bg-slate-950 text-slate-200 pb-32">
+      {/* HEADER PREMIUM */}
+      <header className="p-6 pt-12 bg-gradient-to-b from-slate-900 to-slate-950 sticky top-0 z-30">
+        <div className="flex justify-between items-end">
           <div>
-            <h1 className="text-xl font-black text-slate-900 tracking-tight">
-              PERFORMANCE
+            <span className="text-blue-500 font-black text-[10px] tracking-[0.3em] uppercase mb-1 block">
+              Status: Secagem
+            </span>
+            <h1 className="text-3xl font-black text-white tracking-tighter">
+              Performance
             </h1>
-            <p className="text-[10px] text-blue-600 font-bold uppercase tracking-widest">
-              Foco: Secagem 72kg
-            </p>
           </div>
-          <div className="bg-blue-50 p-2 rounded-full">
-            <Target className="text-blue-600" size={20} />
+          <div className="flex flex-col items-end">
+            <span className="text-[10px] font-bold text-slate-500 uppercase">
+              {new Date().toLocaleDateString("pt-BR", { weekday: "long" })}
+            </span>
+            <span className="text-sm font-black text-white">
+              {new Date().toLocaleDateString("pt-BR", {
+                day: "2-digit",
+                month: "short",
+              })}
+            </span>
           </div>
+        </div>
+
+        {/* PROGRESS BAR DE HIDRATAÇÃO RÁPIDA */}
+        <div className="mt-6 bg-slate-800/50 h-1.5 rounded-full overflow-hidden border border-slate-700/50">
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: "65%" }}
+            className="h-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]"
+          />
+        </div>
+        <div className="flex justify-between mt-2 text-[9px] font-bold text-slate-500 uppercase tracking-widest">
+          <span>Hidratação</span>
+          <span className="text-blue-400">1.8L / 3L</span>
         </div>
       </header>
 
-      <main className="p-4 space-y-8">
-        {/* SEÇÃO 1: TREINO DO DIA (Destaque Premium) */}
+      <main className="px-5 space-y-8 mt-4">
+        {/* CARD DE FOCO - REDESENHADO */}
         <section>
-          <div className="flex items-center gap-2 mb-4 px-2">
-            <Zap className="text-blue-500" size={16} />
-            <h2 className="font-extrabold text-slate-950 uppercase text-[11px] tracking-[0.15em]">
-              Foco de Hoje
-            </h2>
-          </div>
+          {treinoDoDia && (
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              className="relative overflow-hidden group"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-indigo-900 rounded-[2.5rem] transform group-active:scale-95 transition-transform duration-200" />
 
-          {treinoDoDia ? (
-            <div className="relative overflow-hidden p-7 rounded-[2rem] bg-slate-950 shadow-2xl shadow-slate-300 border border-slate-800 snap-center">
-              <div className="absolute -top-10 -right-10 opacity-[0.03] text-white rotate-12">
-                <Dumbbell size={200} strokeWidth={1} />
+              {/* Pattern de Fundo */}
+              <div className="absolute -right-6 -bottom-6 opacity-10 rotate-12">
+                <Dumbbell size={180} strokeWidth={1} />
               </div>
 
-              {/* CORREÇÃO 2: Removido id="bg-gradient" duplicado que causava erro de sintaxe */}
-              <div className="absolute inset-0 bg-[radial-gradient(160%_100%_at_10%_10%,#1e293b_0%,#020617_100%)] opacity-80"></div>
-
-              <div className="relative z-10">
-                <div className="flex justify-between items-center">
-                  <span className="inline-flex items-center gap-1.5 text-[10px] font-black bg-blue-950 text-blue-300 px-3 py-1 rounded-full border border-blue-800 uppercase tracking-widest">
-                    <div className="w-1 h-1 bg-blue-400 rounded-full animate-pulse"></div>
-                    {treinoDoDia.Dia}
-                  </span>
-                  <Target className="text-slate-700" size={16} />
+              <div className="relative p-7 z-10">
+                <div className="flex justify-between items-start mb-6">
+                  <div className="bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-[10px] font-black uppercase tracking-widest text-white">
+                    Treino Ativo
+                  </div>
+                  <Target className="text-white/40" size={18} />
                 </div>
 
-                <h3 className="text-3xl font-extrabold mt-5 text-white leading-tight tracking-tighter antialiased">
+                <h2 className="text-3xl font-black text-white leading-none tracking-tighter mb-2">
                   {treinoDoDia["Atividade Principal"]}
-                </h3>
-
-                <p className="text-slate-400 text-xs mt-4 leading-relaxed font-medium">
+                </h2>
+                <p className="text-blue-100/70 text-xs font-medium leading-relaxed line-clamp-2">
                   {treinoDoDia["Detalhamento do Treino (Prescrição)"]}
                 </p>
 
-                <div className="mt-7 pt-6 border-t border-slate-800 grid grid-cols-2 gap-3">
-                  <div className="bg-slate-900 border border-slate-800 p-3 rounded-xl flex items-center gap-2.5">
-                    <div className="bg-blue-950 p-1.5 rounded-lg text-blue-400 border border-blue-900">
-                      <Zap size={14} strokeWidth={3} />
-                    </div>
-                    <div>
-                      <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">
-                        Core
-                      </span>
-                      <span className="text-[11px] font-extrabold text-slate-200 uppercase tracking-tight">
-                        {treinoDoDia["Foco de Abdômen (Core)"]}
-                      </span>
-                    </div>
+                <div className="mt-8 grid grid-cols-2 gap-3">
+                  <div className="bg-black/20 backdrop-blur-sm p-3 rounded-2xl border border-white/5">
+                    <span className="text-[8px] font-black text-blue-300 uppercase block mb-1">
+                      Foco Core
+                    </span>
+                    <span className="text-[11px] font-bold text-white leading-tight block line-clamp-1">
+                      {treinoDoDia["Foco de Abdômen (Core)"]}
+                    </span>
                   </div>
-
-                  <div className="bg-slate-900 border border-slate-800 p-3 rounded-xl flex items-center gap-2.5">
-                    <div className="bg-green-950 p-1.5 rounded-lg text-green-400 border border-green-900">
-                      <Apple size={14} strokeWidth={3} />
-                    </div>
-                    <div>
-                      <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">
-                        Nutrição
-                      </span>
-                      <span className="text-[11px] font-extrabold text-slate-200 uppercase tracking-tight text-ellipsis overflow-hidden">
-                        {treinoDoDia["Nutrição (Base: Plano PDF)"]}
-                      </span>
-                    </div>
+                  <div className="bg-black/20 backdrop-blur-sm p-3 rounded-2xl border border-white/5">
+                    <span className="text-[8px] font-black text-emerald-300 uppercase block mb-1">
+                      Nutrição
+                    </span>
+                    <span className="text-[11px] font-bold text-white leading-tight block line-clamp-1">
+                      {treinoDoDia["Nutrição (Base: Plano PDF)"]}
+                    </span>
                   </div>
                 </div>
               </div>
-            </div>
-          ) : (
-            <div className="p-10 bg-white rounded-[2rem] border-2 border-dashed border-slate-200 text-center text-slate-400 text-sm font-medium">
-              <Dumbbell size={30} className="mx-auto mb-3 opacity-50" />
-              Nenhum treino listado para hoje.
-              <br />
-              Aproveite o descanso!
-            </div>
+            </motion.div>
           )}
         </section>
 
+        {/* TIMELINE DE ROTINA - MAIS LIMPA */}
         <section>
-          <div className="flex items-center gap-2 mb-4">
-            <Clock className="text-slate-400" size={18} />
-            <h2 className="font-black text-slate-400 uppercase text-[10px] tracking-widest">
-              Rotina Diária
-            </h2>
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-xs font-black text-slate-500 uppercase tracking-widest flex items-center gap-2">
+              <Clock size={14} /> Timeline do Dia
+            </h3>
+            <span className="text-[10px] font-bold text-blue-500">
+              {completed.length}/{data.Treino.length} Concluído
+            </span>
           </div>
-          <div className="space-y-3">
+
+          <div className="space-y-3 relative before:absolute before:left-[19px] before:top-2 before:bottom-2 before:w-[2px] before:bg-slate-800">
             {data.Treino.map((item: any, idx: number) => (
-              <div
+              <motion.div
                 key={idx}
                 onClick={() => toggleTask(`h-${idx}`)}
-                className={`flex items-center gap-4 p-4 rounded-3xl border transition-all active:scale-[0.98] cursor-pointer ${
-                  completed.includes(`h-${idx}`)
-                    ? "bg-slate-100 border-transparent opacity-50"
-                    : "bg-white border-slate-100 shadow-sm"
-                }`}
+                whileTap={{ scale: 0.98 }}
+                className={`relative pl-10 flex items-center group transition-opacity ${completed.includes(`h-${idx}`) ? "opacity-40" : "opacity-100"}`}
               >
-                <div className="flex flex-col items-center justify-center min-w-[50px] border-r border-slate-100 pr-2">
-                  <span className="text-[11px] font-black text-blue-600">
-                    {item.Horário}
-                  </span>
+                <div
+                  className={`absolute left-0 w-10 h-10 rounded-full border-4 border-slate-950 z-10 flex items-center justify-center transition-colors ${completed.includes(`h-${idx}`) ? "bg-blue-500 border-blue-500" : "bg-slate-900 border-slate-800"}`}
+                >
+                  {completed.includes(`h-${idx}`) ? (
+                    <CheckCircle2 size={16} className="text-white" />
+                  ) : (
+                    <div className="w-2 h-2 bg-slate-700 rounded-full" />
+                  )}
                 </div>
-                <div className="flex-1">
-                  <h4 className="text-[11px] font-black text-slate-900 uppercase tracking-tighter">
-                    {item.Categoria}
-                  </h4>
-                  <p className="text-[10px] text-slate-500 font-medium leading-tight">
-                    {item["Descrição da Refeição"]}
-                  </p>
+
+                <div className="bg-slate-900/50 border border-slate-800/50 p-4 rounded-3xl flex-1 flex justify-between items-center">
+                  <div>
+                    <span className="text-[10px] font-black text-blue-500 block mb-0.5">
+                      {item.Horário}
+                    </span>
+                    <h4 className="text-sm font-bold text-white tracking-tight uppercase">
+                      {item.Categoria}
+                    </h4>
+                    <p className="text-[10px] text-slate-500 font-medium">
+                      {item["Descrição da Refeição"]}
+                    </p>
+                  </div>
+                  <ChevronRight size={14} className="text-slate-700" />
                 </div>
-                {completed.includes(`h-${idx}`) ? (
-                  <CheckCircle2 className="text-blue-600" />
-                ) : (
-                  <Circle className="text-slate-200" />
-                )}
-              </div>
+              </motion.div>
             ))}
           </div>
         </section>
 
-        <section>
-          <div className="flex items-center gap-2 mb-4">
-            <Apple className="text-slate-400" size={18} />
-            <h2 className="font-black text-slate-400 uppercase text-[10px] tracking-widest">
-              Menu Nutricional
-            </h2>
-          </div>
-          <div className="grid gap-4">
+        {/* SUBSTITUIÇÕES - ESTILO SLIDE */}
+        <section className="pb-10">
+          <h3 className="text-xs font-black text-slate-500 uppercase tracking-widest flex items-center gap-2 mb-4">
+            <Apple size={14} /> Guia Nutricional
+          </h3>
+          <div className="flex gap-4 overflow-x-auto no-scrollbar pb-4 snap-x">
             {data.Horarios.filter(
               (h: any) => h.Refeição && h["Opção A (Padrão)"],
             ).map((nutri: any, idx: number) => (
               <div
                 key={idx}
-                className="bg-white p-5 rounded-[2.5rem] border border-slate-100 shadow-sm relative overflow-hidden"
+                className="min-w-[280px] snap-center bg-slate-900 border border-slate-800 p-5 rounded-[2rem]"
               >
-                <h4 className="text-xs font-black text-slate-900 mb-4 uppercase flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-                  {nutri.Refeição}
-                </h4>
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-8 h-8 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500 text-xs font-black">
+                    {idx + 1}
+                  </div>
+                  <h4 className="text-xs font-black text-white uppercase tracking-tighter">
+                    {nutri.Refeição}
+                  </h4>
+                </div>
                 <div className="space-y-3">
-                  <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                    <span className="text-[8px] font-black text-blue-600 uppercase block mb-1 tracking-widest">
-                      Opção A
+                  <div className="p-3 bg-slate-950 rounded-2xl border border-slate-800/50 group active:border-blue-500/50 transition-colors">
+                    <span className="text-[8px] font-black text-blue-500 uppercase block mb-1">
+                      Opção Principal
                     </span>
-                    <p className="text-xs font-bold text-slate-700 leading-snug">
+                    <p className="text-[11px] font-bold text-slate-300 leading-snug">
                       {nutri["Opção A (Padrão)"]}
                     </p>
                   </div>
-                  <div className="p-4 bg-white rounded-2xl border border-slate-100">
-                    <span className="text-[8px] font-black text-slate-400 uppercase block mb-1 tracking-widest">
-                      Opção B
+                  <div className="p-3 bg-slate-950 rounded-2xl border border-slate-800/50">
+                    <span className="text-[8px] font-black text-slate-500 uppercase block mb-1 tracking-widest">
+                      Variação B
                     </span>
-                    <p className="text-xs font-bold text-slate-500 leading-snug">
+                    <p className="text-[11px] font-bold text-slate-500 leading-snug">
                       {nutri["Opção B (Variação)"]}
                     </p>
                   </div>
-                  {nutri["O que evitar?"] && (
-                    <div className="px-2 flex items-start gap-2">
-                      <span className="text-[9px] font-bold text-red-400 uppercase">
-                        Evitar:
-                      </span>
-                      <span className="text-[9px] font-medium text-slate-400">
-                        {nutri["O que evitar?"]}
-                      </span>
-                    </div>
-                  )}
                 </div>
               </div>
             ))}
           </div>
         </section>
-
-        <section className="bg-blue-50 p-6 rounded-[2.5rem] border border-blue-100">
-          <div className="flex items-center gap-2 mb-2 text-blue-700">
-            <Info size={16} />
-            <h3 className="text-xs font-black uppercase tracking-widest">
-              Dica de Performance
-            </h3>
-          </div>
-          <p className="text-[11px] text-blue-800 font-medium leading-relaxed italic">
-            "Beba 500ml de água 30 minutos antes da corrida. Melhora a
-            viscosidade do sangue e o transporte de oxigênio."
-          </p>
-        </section>
       </main>
 
-      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-100 p-4 flex justify-around items-center z-30">
-        <Droplets className="text-blue-600" size={20} />
-        <div className="bg-slate-900 p-3 rounded-2xl -mt-10 shadow-lg border-4 border-slate-50">
-          <Dumbbell className="text-white" size={24} />
-        </div>
-        <Apple className="text-slate-300" size={20} />
+      {/* NAV BAR FLUTUANTE (DOCK STYLE) */}
+      <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900/80 backdrop-blur-xl border border-white/10 p-2 rounded-full flex items-center gap-1 shadow-2xl z-40">
+        <button
+          onClick={() => setActiveTab("rotina")}
+          className={`p-4 rounded-full transition-all ${activeTab === "rotina" ? "bg-blue-600 text-white" : "text-slate-500"}`}
+        >
+          <Clock size={20} />
+        </button>
+        <button
+          onClick={() => setActiveTab("treino")}
+          className={`p-4 rounded-full transition-all ${activeTab === "treino" ? "bg-blue-600 text-white" : "text-slate-500"}`}
+        >
+          <Dumbbell size={20} />
+        </button>
+        <button
+          onClick={() => setActiveTab("dieta")}
+          className={`p-4 rounded-full transition-all ${activeTab === "dieta" ? "bg-blue-600 text-white" : "text-slate-500"}`}
+        >
+          <Apple size={20} />
+        </button>
+        <div className="w-[1px] h-6 bg-slate-800 mx-2" />
+        <button className="p-4 text-blue-400">
+          <Droplets size={20} />
+        </button>
       </nav>
     </div>
   );

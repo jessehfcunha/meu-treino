@@ -82,61 +82,61 @@
         }
     ],
     "Nutricao": [
-        {
-            "Dia": "SEG",
-            "Atividade Principal": "Musculação: Inferiores",
-            "Detalhamento do Treino (Prescrição)": "4x10 Agachamento / 3x12 Leg Press / 4x10 Stiff / 3x15 Panturrilha",
-            "Foco de Abdômen (Core)": "Vacuum: 3x30s (Jejum) + Infra: 4x15",
-            "Nutrição (Base: Plano PDF)": "Opção A (Carbo no Almoço)"
-        },
-        {
-            "Dia": "TER",
-            "Atividade Principal": "Corrida: Intervalada",
-            "Detalhamento do Treino (Prescrição)": "10x (2' Trote / 1' Caminhada). Manter Esforço 6-7.",
-            "Foco de Abdômen (Core)": "Prancha Isométrica: 4x45s (Foco em Tensão)",
-            "Nutrição (Base: Plano PDF)": "Opção B (Batata Doce/Peixe)"
-        },
-        {
-            "Dia": "QUA",
-            "Atividade Principal": "Musculação: Superiores",
-            "Detalhamento do Treino (Prescrição)": "3x10 Supino / 3x10 Remada / 3x12 Desenv. / 4x12 Pulldown",
-            "Foco de Abdômen (Core)": "Elevação de Pernas: 4x15 (Barra Fixa)",
-            "Nutrição (Base: Plano PDF)": "Opção A (Carbo no Almoço)"
-        },
-        {
-            "Dia": "QUI",
-            "Atividade Principal": "Corrida: LISS",
-            "Detalhamento do Treino (Prescrição)": "30-35 min Constantes. Zona 2 (130-140 bpm). Esforço 5.",
-            "Foco de Abdômen (Core)": "Vacuum: 3x30s (Jejum)",
-            "Nutrição (Base: Plano PDF)": "Opção B (Batata Doce/Peixe)"
-        },
-        {
-            "Dia": "SEX",
-            "Atividade Principal": "Funcional / Full Body",
-            "Detalhamento do Treino (Prescrição)": "4x6 Terra / 4x20 Swing / 4x15 Burpees / 3x20 Afundo",
-            "Foco de Abdômen (Core)": "Circuito: Escalador + Prancha (3 Rounds)",
-            "Nutrição (Base: Plano PDF)": "Opção A (Carbo no Almoço)"
-        },
-        {
-            "Dia": "SÁB",
-            "Atividade Principal": "Corrida: Longão",
-            "Detalhamento do Treino (Prescrição)": "45-50 min Contínuos. Foco no \"tempo de pé\". Esforço 5-6.",
-            "Foco de Abdômen (Core)": "Prancha Lateral: 3x45s (Cada lado)",
-            "Nutrição (Base: Plano PDF)": "Opção B (Foco em Proteína)"
-        },
-        {
-            "Dia": "DOM",
-            "Atividade Principal": "Descanso Ativo",
-            "Detalhamento do Treino (Prescrição)": "30 min Caminhada Leve ou Lazer. Esforço 2-3.",
-            "Foco de Abdômen (Core)": "-",
-            "Nutrição (Base: Plano PDF)": "Opção B (Vegetais e Proteína)"
-        },
-        {
-            "Dia": "1. Otimização da Corrida\nTerça (Intervalado): Este treino não é para \"\"morrer\"\" de cansaço, mas para criar picos leves de frequência que ativam a lipase (enzima que quebra gordura).\nO trote de 2' garante que você não sobrecarregue os joelhos com o peso de 72kg.\n\nQuinta (LISS): É aqui que a gordura abdominal é oxidada. Manter os 130-140 bpm é crucial.\nSe passar disso, você começa a queimar mais açúcar do que gordura.\n\n2. Musculação (Preservação de Massa Magra)\nCadência Controlada: O controle da fase excêntrica (descida) aumenta o dano metabólico necessário para queimar calorias mesmo em repouso.\n\nDensidade: Mantenha o descanso entre 45s e 60s para manter a frequência cardíaca elevada durante todo o treino de força.\n\n3. Core e Linha de Cintura (Estética)\nStomach Vacuum (Jejum): Faça assim que acordar. você pode sentir um pouco de pressão interna; controle a respiração. \nIsso vai \"\"murchar\"\" a linha de cintura ao fortalecer o transverso.\n\nBarra Fixa (Infra): O foco é estabilizar o tronco. Não balance.\nA força deve vir do abdômen inferior para tracionar o quadril.\n\n4. Estratégia Nutricional (Ajuste para 72kg)\nMantenha a restrição de farinhas e doces conforme orientado no seu guia.\n\nHidratação: Beba 500ml de água 30 minutos antes de cada corrida. Isso melhora a viscosidade do sangue e facilita o transporte de oxigênio para os músculos.",
-            "Atividade Principal": null,
-            "Detalhamento do Treino (Prescrição)": null,
-            "Foco de Abdômen (Core)": null,
-            "Nutrição (Base: Plano PDF)": null
-        }
-    ]
+    {
+      "Dia": "SEG",
+      "Atividade Principal": "Musculação: Membros Inferiores (Foco em Força)",
+      "Detalhamento do Treino (Prescrição)": "Agachamento Livre (4x10) / Leg Press 45º (3x12) / Stiff (4x10) / Cadeira Extensora (3x15 com Drop-set na última). Descanso: 45-60 segundos. Cadência: 3030.",
+      "Foco de Abdômen (Core)": "Stomach Vacuum: 3x30s (Jejum) + Elevação de Pernas Suspenso (Infra): 4x15 na Barra Fixa.",
+      "Nutrição (Base: Plano PDF)": "Opção A: Foco em Arroz Integral e Proteína (180g) para suporte ao treino de força."
+    },
+    {
+      "Dia": "TER",
+      "Atividade Principal": "Corrida: Intervalada (Queima de Gordura)",
+      "Detalhamento do Treino (Prescrição)": "Aquecimento 5' + 10 séries de (2' Trote Leve / 1' Caminhada). Esforço 6-7. Foco em ativação da lipase e segurança articular.",
+      "Foco de Abdômen (Core)": "Prancha Abdominal Ventral: 4x45s. Diferencial: Contrair glúteo e empurrar cotovelos contra o chão.",
+      "Nutrição (Base: Plano PDF)": "Opção B: Batata Doce e Peixe. Controle glicêmico para otimizar a queima de gordura pós-corrida."
+    },
+    {
+      "Dia": "QUA",
+      "Atividade Principal": "Musculação: Membros Superiores (Foco em Postura)",
+      "Detalhamento do Treino (Prescrição)": "Bi-set: Supino Reto + Remada Curvada (3x10) / Desenvolvimento Ombros (3x12) / Pulldown Puxada Alta (4x12). Descanso: 45-60 segundos.",
+      "Foco de Abdômen (Core)": "Elevação de Pernas Suspenso: 4x15. Foco na fase excêntrica (descida lenta) para definição da linha infra.",
+      "Nutrição (Base: Plano PDF)": "Opção A: Carboidrato integral no almoço para recuperação muscular e síntese proteica."
+    },
+    {
+      "Dia": "QUI",
+      "Atividade Principal": "Corrida: LISS (Low Intensity Steady State)",
+      "Detalhamento do Treino (Prescrição)": "30 a 35 minutos contínuos. Zona 2 do Garmin (130-140 bpm). Esforço 5. Ritmo confortável para oxidação direta de gordura.",
+      "Foco de Abdômen (Core)": "Stomach Vacuum: 3x30s (Jejum) para fortalecimento do músculo transverso.",
+      "Nutrição (Base: Plano PDF)": "Opção B: Proteína limpa e Vegetais. Redução de carboidratos para manter o corpo em estado de queima."
+    },
+    {
+      "Dia": "SEX",
+      "Atividade Principal": "Funcional / Full Body (Alta Densidade)",
+      "Detalhamento do Treino (Prescrição)": "Levantamento Terra (4x6) / Kettlebell Swing (4x20) / Burpees (4x15) / Afundo (3x20 passos). Descanso: 60 segundos.",
+      "Foco de Abdômen (Core)": "Circuito: Escalador (Mountain Climber) + Prancha Ventral (3 Rounds sem descanso).",
+      "Nutrição (Base: Plano PDF)": "Opção A: Suporte calórico para o alto gasto energético do treino de corpo inteiro."
+    },
+    {
+      "Dia": "SÁB",
+      "Atividade Principal": "Corrida: Longão de Base",
+      "Detalhamento do Treino (Prescrição)": "45 a 50 minutos. Ritmo constante. Foco em resistência aeróbica e tempo sob esforço. Esforço 5-6.",
+      "Foco de Abdômen (Core)": "Prancha Lateral: 3x45s de cada lado para fortalecimento de oblíquos e linha de cintura.",
+      "Nutrição (Base: Plano PDF)": "Opção B: Foco em proteínas de alta absorção e vegetais fibrosos (Brócolis/Aspargos)."
+    },
+    {
+      "Dia": "DOM",
+      "Atividade Principal": "Descanso Ativo",
+      "Detalhamento do Treino (Prescrição)": "30 minutos de Caminhada Leve ao ar livre. Esforço 2-3. Foco em recuperação sistêmica.",
+      "Foco de Abdômen (Core)": "Recuperação muscular ativa.",
+      "Nutrição (Base: Plano PDF)": "Opção B: Jejum intermitente opcional ou refeições leves conforme o guia alimentar."
+    },
+    {
+      "Dia": "NOTAS ESTRATÉGICAS PARA OS 72KG",
+      "Atividade Principal": "1. EFICIÊNCIA CARDIOVASCULAR: O treino de Terça e Quinta ensina o corpo a usar gordura abdominal como combustível primário. Não ultrapasse a Zona 2 na Quinta para não queimar massa magra.",
+      "Detalhamento do Treino (Prescrição)": "2. DENSIDADE NA MUSCULAÇÃO: Mantenha o descanso rigoroso de 45-60 segundos. Isso mantém o metabolismo elevado (EPOC) mesmo horas após sair da academia.",
+      "Foco de Abdômen (Core)": "3. ESTÉTICA DA CINTURA: O Stomach Vacuum é inegociável para 'murchar' a barriga. O Vacuum trabalha o transverso que funciona como uma cinta natural.",
+      "Nutrição (Base: Plano PDF)": "4. HIDRATAÇÃO E INSULINA: Beba 500ml de água antes de cada corrida. Evite farinhas brancas para manter a insulina baixa, facilitando a liberação de gordura da região abdominal."
+    }
+  ]
 }
