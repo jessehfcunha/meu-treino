@@ -1,0 +1,142 @@
+{
+    "Horarios": [
+        {
+            "Refeição": "Almoço",
+            "Opção A (Padrão)": "180g Frango Grelhado + 3 col. Arroz Integral + Salada com Chia",
+            "Opção B (Variação)": "180g Peixe Assado + 100g Batata Doce + Brócolis com Chia",
+            "O que evitar?": "Arroz branco, frituras e sucos"
+        },
+        {
+            "Refeição": "Lanche",
+            "Opção A (Padrão)": "3 Ovos cozidos/mexidos + 1 Maçã ou Pera",
+            "Opção B (Variação)": "150g de Iogurte Grego Natural + 3 Castanhas + 1 col. Linhaça",
+            "O que evitar?": "Bolachas, pães brancos e barras de cereal"
+        },
+        {
+            "Refeição": "Jantar",
+            "Opção A (Padrão)": "180g Patinho moído + Mix de Legumes (Abobrinha/Berinjela)",
+            "Opção B (Variação)": "180g Sobrecoxa (sem pele) + Omelete de Espinafre",
+            "O que evitar?": "Carboidratos pesados (massa/pão)"
+        },
+        {
+            "Refeição": "Meta",
+            "Opção A (Padrão)": NaN,
+            "Opção B (Variação)": NaN,
+            "O que evitar?": NaN
+        },
+        {
+            "Refeição": "Água (2.5L a 3L) \nProteína em todas as refeições\nCaminhada/Treino (30 min)\nSono (mínimo 6h)\nZero Açúcar/Álcool",
+            "Opção A (Padrão)": NaN,
+            "Opção B (Variação)": NaN,
+            "O que evitar?": NaN
+        }
+    ],
+    "Treino": [
+        {
+            "Horário": "08:00",
+            "Categoria": "Hidratação",
+            "Descrição da Refeição": "500ml de água + Café ou Chá (sem açúcar)",
+            "Meta Técnica": "Baixar Cortisol / Lipólise"
+        },
+        {
+            "Horário": "10:30",
+            "Categoria": "Hidratação",
+            "Descrição da Refeição": "500ml de água",
+            "Meta Técnica": "Controle de Fome"
+        },
+        {
+            "Horário": "12:00",
+            "Categoria": "ALMOÇO",
+            "Descrição da Refeição": "Sólido Principal",
+            "Meta Técnica": "Saciedade + Fibra (Chia)"
+        },
+        {
+            "Horário": "15:00",
+            "Categoria": "Hidratação",
+            "Descrição da Refeição": "500ml de água",
+            "Meta Técnica": "Manter Metabolismo"
+        },
+        {
+            "Horário": "16:30",
+            "Categoria": "LANCHE",
+            "Descrição da Refeição": "Sólido Proteico",
+            "Meta Técnica": "Preservação de Músculo"
+        },
+        {
+            "Horário": "19:00",
+            "Categoria": "Hidratação",
+            "Descrição da Refeição": "500ml de água",
+            "Meta Técnica": "Redução de Retenção"
+        },
+        {
+            "Horário": "20:00",
+            "Categoria": "JANTAR",
+            "Descrição da Refeição": "Sólido Leve",
+            "Meta Técnica": "Queima de Gordura Noturna"
+        },
+        {
+            "Horário": "21:30",
+            "Categoria": "Sono",
+            "Descrição da Refeição": "Chá de Camomila/Mulungu (sem açúcar)",
+            "Meta Técnica": "Higiene do Sono"
+        }
+    ],
+    "Nutricao": [
+        {
+            "Dia": "SEG",
+            "Atividade Principal": "Musculação: Inferiores",
+            "Detalhamento do Treino (Prescrição)": "4x10 Agachamento / 3x12 Leg Press / 4x10 Stiff / 3x15 Panturrilha",
+            "Foco de Abdômen (Core)": "Vacuum: 3x30s (Jejum) + Infra: 4x15",
+            "Nutrição (Base: Plano PDF)": "Opção A (Carbo no Almoço)"
+        },
+        {
+            "Dia": "TER",
+            "Atividade Principal": "Corrida: Intervalada",
+            "Detalhamento do Treino (Prescrição)": "10x (2' Trote / 1' Caminhada). Manter Esforço 6-7.",
+            "Foco de Abdômen (Core)": "Prancha Isométrica: 4x45s (Foco em Tensão)",
+            "Nutrição (Base: Plano PDF)": "Opção B (Batata Doce/Peixe)"
+        },
+        {
+            "Dia": "QUA",
+            "Atividade Principal": "Musculação: Superiores",
+            "Detalhamento do Treino (Prescrição)": "3x10 Supino / 3x10 Remada / 3x12 Desenv. / 4x12 Pulldown",
+            "Foco de Abdômen (Core)": "Elevação de Pernas: 4x15 (Barra Fixa)",
+            "Nutrição (Base: Plano PDF)": "Opção A (Carbo no Almoço)"
+        },
+        {
+            "Dia": "QUI",
+            "Atividade Principal": "Corrida: LISS",
+            "Detalhamento do Treino (Prescrição)": "30-35 min Constantes. Zona 2 (130-140 bpm). Esforço 5.",
+            "Foco de Abdômen (Core)": "Vacuum: 3x30s (Jejum)",
+            "Nutrição (Base: Plano PDF)": "Opção B (Batata Doce/Peixe)"
+        },
+        {
+            "Dia": "SEX",
+            "Atividade Principal": "Funcional / Full Body",
+            "Detalhamento do Treino (Prescrição)": "4x6 Terra / 4x20 Swing / 4x15 Burpees / 3x20 Afundo",
+            "Foco de Abdômen (Core)": "Circuito: Escalador + Prancha (3 Rounds)",
+            "Nutrição (Base: Plano PDF)": "Opção A (Carbo no Almoço)"
+        },
+        {
+            "Dia": "SÁB",
+            "Atividade Principal": "Corrida: Longão",
+            "Detalhamento do Treino (Prescrição)": "45-50 min Contínuos. Foco no \"tempo de pé\". Esforço 5-6.",
+            "Foco de Abdômen (Core)": "Prancha Lateral: 3x45s (Cada lado)",
+            "Nutrição (Base: Plano PDF)": "Opção B (Foco em Proteína)"
+        },
+        {
+            "Dia": "DOM",
+            "Atividade Principal": "Descanso Ativo",
+            "Detalhamento do Treino (Prescrição)": "30 min Caminhada Leve ou Lazer. Esforço 2-3.",
+            "Foco de Abdômen (Core)": "-",
+            "Nutrição (Base: Plano PDF)": "Opção B (Vegetais e Proteína)"
+        },
+        {
+            "Dia": "1. Otimização da Corrida\nTerça (Intervalado): Este treino não é para \"\"morrer\"\" de cansaço, mas para criar picos leves de frequência que ativam a lipase (enzima que quebra gordura).\nO trote de 2' garante que você não sobrecarregue os joelhos com o peso de 72kg.\n\nQuinta (LISS): É aqui que a gordura abdominal é oxidada. Manter os 130-140 bpm é crucial.\nSe passar disso, você começa a queimar mais açúcar do que gordura.\n\n2. Musculação (Preservação de Massa Magra)\nCadência Controlada: O controle da fase excêntrica (descida) aumenta o dano metabólico necessário para queimar calorias mesmo em repouso.\n\nDensidade: Mantenha o descanso entre 45s e 60s para manter a frequência cardíaca elevada durante todo o treino de força.\n\n3. Core e Linha de Cintura (Estética)\nStomach Vacuum (Jejum): Faça assim que acordar. você pode sentir um pouco de pressão interna; controle a respiração. \nIsso vai \"\"murchar\"\" a linha de cintura ao fortalecer o transverso.\n\nBarra Fixa (Infra): O foco é estabilizar o tronco. Não balance.\nA força deve vir do abdômen inferior para tracionar o quadril.\n\n4. Estratégia Nutricional (Ajuste para 72kg)\nMantenha a restrição de farinhas e doces conforme orientado no seu guia.\n\nHidratação: Beba 500ml de água 30 minutos antes de cada corrida. Isso melhora a viscosidade do sangue e facilita o transporte de oxigênio para os músculos.",
+            "Atividade Principal": NaN,
+            "Detalhamento do Treino (Prescrição)": NaN,
+            "Foco de Abdômen (Core)": NaN,
+            "Nutrição (Base: Plano PDF)": NaN
+        }
+    ]
+}
