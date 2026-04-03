@@ -1,30 +1,51 @@
 {
-    "Nutriçao": [
-        {
-            "Refeição": "Café da Manhã",
-            "Opção A (Padrão)": "Omelete de 3 claras e 1 gema + 1 fatia de mamão com sementes de chia",
-            "Opção B (Variação)": "40g de Aveia em flocos com 1 scoop de Whey Protein + 5 morangos",
-            "O que evitar?": "Pães brancos, margarina, achocolatados e tapioca"
-        },
-        {
-            "Refeição": "Almoço",
-            "Opção A (Padrão)": "180g Frango Grelhado + 3 col. Arroz Integral + Salada com Chia",
-            "Opção B (Variação)": "180g Peixe Assado + 100g Batata Doce + Brócolis com Chia",
-            "O que evitar?": "Arroz branco, frituras e sucos"
-        },
-        {
-            "Refeição": "Lanche",
-            "Opção A (Padrão)": "3 Ovos cozidos/mexidos + 1 Maçã ou Pera",
-            "Opção B (Variação)": "150g de Iogurte Grego Natural + 3 Castanhas + 1 col. Linhaça",
-            "O que evitar?": "Bolachas, pães brancos e barras de cereal"
-        },
-        {
-            "Refeição": "Jantar",
-            "Opção A (Padrão)": "180g Patinho moído + Mix de Legumes (Abobrinha/Berinjela)",
-            "Opção B (Variação)": "180g Sobrecoxa (sem pele) + Omelete de Espinafre",
-            "O que evitar?": "Carboidratos pesados (massa/pão)"
-        }
-    ],
+  "Nutriçao": [
+    {
+      "Refeição": "Café da Manhã",
+      "Opção A (Padrão)": "Omelete de 3 claras e 1 gema + 1 fatia de mamão com sementes de chia",
+      "Opção B (Variação)": "40g de Aveia em flocos com 1 scoop de Whey Protein + 5 morangos",
+      "O que evitar?": "Pães brancos, margarina, achocolatados e tapioca",
+      "Lista de Compras": "Ovos, Mamão Formosa, Chia, Aveia em flocos, Whey Protein, Morangos",
+      "Marcas Sugeridas": "Ovos Mantiqueira, Aveia Quaker ou Jasmine, Whey Growth ou Max Titanium",
+      "Base Calórica": "Aprox. 320 kcal"
+    },
+    {
+      "Refeição": "Almoço",
+      "Opção A (Padrão)": "180g Frango Grelhado + 3 col. Arroz Integral + Salada com Chia",
+      "Opção B (Variação)": "180g Peixe Assado + 100g Batata Doce + Brócolis com Chia",
+      "O que evitar?": "Arroz branco, frituras e sucos",
+      "Lista de Compras": "Peito de frango, Tilápia, Arroz integral, Batata doce, Brócolis, Mix de folhas",
+      "Marcas Sugeridas": "Frango Seara DaGranja ou Korin, Arroz Camil ou Tio João, Peixe Swift",
+      "Base Calórica": "Aprox. 450 kcal"
+    },
+    {
+      "Refeição": "Lanche",
+      "Opção A (Padrão)": "3 Ovos cozidos/mexidos + 1 Maçã ou Pera",
+      "Opção B (Variação)": "150g de Iogurte Grego Natural + 3 Castanhas + 1 col. Linhaça",
+      "O que evitar?": "Bolachas, pães brancos e barras de cereal",
+      "Lista de Compras": "Ovos, Maçã Fuji, Pera Willians, Iogurte Grego Natural, Castanha do Pará, Linhaça dourada",
+      "Marcas Sugeridas": "Iogurte Itambé Natural ou Vigor Grego Zero, Linhaça Mãe Terra",
+      "Base Calórica": "Aprox. 250 kcal"
+    },
+    {
+      "Refeição": "Jantar",
+      "Opção A (Padrão)": "180g Patinho moído + Mix de Legumes (Abobrinha/Berinjela)",
+      "Opção B (Variação)": "180g Sobrecoxa (sem pele) + Omelete de Espinafre",
+      "O que evitar?": "Carboidratos pesados (massa/pão)",
+      "Lista de Compras": "Patinho moído, Abobrinha, Berinjela, Sobrecoxa de frango, Espinafre fresco",
+      "Marcas Sugeridas": "Carne Friboi Nature ou Swift, Vegetais frescos da feira",
+      "Base Calórica": "Aprox. 380 kcal"
+    },
+    {
+      "Refeição": "Metas Diárias",
+      "Opção A (Padrão)": "Água: 2.5L a 3L",
+      "Opção B (Variação)": "Treino: 30 min / Sono: 6h+",
+      "O que evitar?": "Açúcar e Álcool",
+      "Lista de Compras": "Garrafa de água 1L (para controle), Temperos naturais (Cúrcuma, Alho, Manjericão)",
+      "Marcas Sugeridas": "Azeite de Oliva Extra Virgem (Andorinha ou Gallo)",
+      "Base Calórica": "Total Diário: 1400 - 1600 kcal"
+    }
+  ],
     "Horario": [
         {
             "Horário": "08:00",
@@ -133,6 +154,38 @@
             "Nutrição (Base: Plano PDF)": "4. HIDRATAÇÃO: Beba 500ml de água antes de cada corrida para otimizar o transporte de oxigênio."
         }
     ],
+  "Compras": [
+    {
+      "Secao": "Compras para o Café da Manhã",
+      "Itens": "Ovos, Mamão Formosa, Sementes de Chia, Aveia em flocos grossos, Whey Protein, Morangos frescos",
+      "Marcas": "Mantiqueira (ovos), Quaker ou Jasmine (aveia), Growth ou Max Titanium (whey)",
+      "Base Calorica": "320 kcal"
+    },
+    {
+      "Secao": "Compras para o Almoço",
+      "Itens": "Peito de frango, Filé de Tilápia, Arroz Integral, Batata Doce, Brócolis Ninja, Mix de folhas",
+      "Marcas": "Seara DaGranja ou Korin (frango), Swift (peixe), Camil ou Tio João (arroz)",
+      "Base Calorica": "450 kcal"
+    },
+    {
+      "Secao": "Compras para o Lanche",
+      "Itens": "Maçã Fuji, Pera Willians, Iogurte Grego Natural, Castanha do Pará, Linhaça Dourada",
+      "Marcas": "Vigor Grego Zero ou Itambé Natural (iogurte), Mãe Terra (linhaça)",
+      "Base Calorica": "250 kcal"
+    },
+    {
+      "Secao": "Compras para o Jantar",
+      "Itens": "Patinho moído, Sobrecoxa de frango (sem pele), Abobrinha, Berinjela, Espinafre fresco",
+      "Marcas": "Friboi Nature ou Swift (carne), Vegetais selecionados (feiras/hortifruti)",
+      "Base Calorica": "380 kcal"
+    },
+    {
+      "Secao": "Recomendação",
+      "Mais indicado Lanches": "Opção B (Iogurte + Castanhas) pela praticidade e gorduras boas",
+      "Mais indicado Janta": "Opção A (Patinho + Legumes) para evitar picos de insulina à noite",
+      "Meta de Hidratação": "2.5L a 3L de água (Indispensável)"
+    }
+  ],
     "Notas": {
         "Hidratação": "Mínimo 3L/dia. Beber 500ml 30min antes das corridas.",
         "Cardio": "Não ultrapassar a Zona 2 no LISS para preservar massa magra.",
