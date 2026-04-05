@@ -8,6 +8,7 @@ import {
   Target,
   Info,
   Zap,
+  Bot,
   ShoppingCart,
 } from "lucide-react";
 
@@ -17,12 +18,14 @@ import { DailyRoutine } from "./src/components/DailyRoutine";
 import { DietPlan } from "./src/components/DietPlan";
 import { ShoppingList } from "./src/components/ShoppingList";
 import { MasterNotes } from "./src/components/MasterNotes";
+import { AIAgent } from "./src/components/AIAgent";
 
 export default function Home() {
   const [data, setData] = useState<any>(null);
   const [completed, setCompleted] = useState<string[]>([]);
   const [activeNav, setActiveNav] = useState("treino");
 
+  const [isChatOpen, setIsChatOpen] = useState(false);
   const diasSemana: { [key: number]: string } = {
     0: "DOM",
     1: "SEG",
@@ -167,6 +170,17 @@ export default function Home() {
         <MasterNotes data={data.Notas} />
       </main>
 
+      {/* O Agente de IA agora é controlado pelo Dock */}
+      {data && (
+        <AIAgent
+          userContext={data}
+          isOpen={isChatOpen}
+          setIsOpen={setIsChatOpen}
+        />
+      )}
+
+      {/* SEU DOCK DE NAVEGAÇÃO CONTINUA AQUI... */}
+
       {/* DOCK NAVEGAÇÃO FLUTUANTE */}
       <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-slate-950/90 backdrop-blur-2xl border border-white/10 p-2 rounded-[2.5rem] flex items-center gap-1 shadow-2xl z-50">
         <button
@@ -199,6 +213,17 @@ export default function Home() {
           className={`p-4 rounded-full ${activeNav === "notas" ? "text-blue-400" : "text-slate-500"}`}
         >
           <Info size={20} />
+        </button>
+        {/* Substitua o botão do Zap atual por este no seu Dock */}
+        <button
+          onClick={() => setIsChatOpen(true)} // Abre o chat ao clicar
+          className={`p-4 rounded-full transition-all ${
+            isChatOpen
+              ? "bg-blue-600 text-white shadow-[0_0_15px_rgba(37,99,235,0.5)]"
+              : "text-slate-500 hover:text-blue-400"
+          }`}
+        >
+          <Bot size={22} fill={isChatOpen ? "white" : "none"} />
         </button>
       </nav>
     </div>

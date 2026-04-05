@@ -1,0 +1,17 @@
+{
+  "name": "Performance App",
+  "short_name": "Performance",
+  "description": "Treino e Dieta de Alta Performance",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
