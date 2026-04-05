@@ -46,114 +46,282 @@
       "Base Calórica": "Total Diário: 1400 - 1600 kcal"
     }
   ],
-    "Horario": [
+  "Horario": [
+    {
+      "Horário": "08:00",
+      "Categoria": "CAFÉ DA MANHÃ",
+      "Descrição da Refeição": "Sólido Proteico + 500ml de água",
+      "Meta Técnica": "Quebra de jejum com baixa insulina / Lipólise"
+    },
+    {
+      "Horário": "10:30",
+      "Categoria": "Hidratação",
+      "Descrição da Refeição": "500ml de água",
+      "Meta Técnica": "Controle de Fome"
+    },
+    {
+      "Horário": "12:00",
+      "Categoria": "ALMOÇO",
+      "Descrição da Refeição": "Sólido Principal",
+      "Meta Técnica": "Saciedade + Fibra (Chia)"
+    },
+    {
+      "Horário": "15:00",
+      "Categoria": "Hidratação",
+      "Descrição da Refeição": "500ml de água",
+      "Meta Técnica": "Manter Metabolismo"
+    },
+    {
+      "Horário": "16:30",
+      "Categoria": "LANCHE",
+      "Descrição da Refeição": "Sólido Proteico",
+      "Meta Técnica": "Preservação de Músculo"
+    },
+    {
+      "Horário": "19:00",
+      "Categoria": "Hidratação",
+      "Descrição da Refeição": "500ml de água",
+      "Meta Técnica": "Redução de Retenção"
+    },
+    {
+      "Horário": "20:00",
+      "Categoria": "JANTAR",
+      "Descrição da Refeição": "Sólido Leve",
+      "Meta Técnica": "Queima de Gordura Noturna"
+    },
+    {
+      "Horário": "21:30",
+      "Categoria": "Sono",
+      "Descrição da Refeição": "Chá de Camomila/Mulungu (sem açúcar)",
+      "Meta Técnica": "Higiene do Sono"
+    }
+  ],
+  "Treino": [
+    {
+      "Dia": "SEG",
+      "Atividade Principal": "Membros Inferiores (Força)",
+      "Exercicios": [
         {
-            "Horário": "08:00",
-            "Categoria": "CAFÉ DA MANHÃ",
-            "Descrição da Refeição": "Sólido Proteico + 500ml de água",
-            "Meta Técnica": "Quebra de jejum com baixa insulina / Lipólise"
+          "nome": "Agachamento Livre",
+          "slug": "Barbell Squat",
+          "wgerId": 615,
+          "series": "4x10",
+          "obs": "Cadência 3030"
         },
         {
-            "Horário": "10:30",
-            "Categoria": "Hidratação",
-            "Descrição da Refeição": "500ml de água",
-            "Meta Técnica": "Controle de Fome"
+          "nome": "Leg Press 45º",
+          "slug": "LegPress",
+          "wgerId": 371,
+          "series": "3x12",
+          "obs": "Descanso 45-60s"
         },
         {
-            "Horário": "12:00",
-            "Categoria": "ALMOÇO",
-            "Descrição da Refeição": "Sólido Principal",
-            "Meta Técnica": "Saciedade + Fibra (Chia)"
+          "nome": "Stiff",
+          "slug": "Stiff-Legged Barbell Deadlift",
+          "wgerId": 627,
+          "series": "4x10",
+          "obs": "Foco em posterior"
         },
         {
-            "Horário": "15:00",
-            "Categoria": "Hidratação",
-            "Descrição da Refeição": "500ml de água",
-            "Meta Técnica": "Manter Metabolismo"
+          "nome": "Cadeira Extensora",
+          "slug": "Leg Extensions",
+          "wgerId": 369,
+          "series": "3x15",
+          "obs": "Drop-set na última"
         },
         {
-            "Horário": "16:30",
-            "Categoria": "LANCHE",
-            "Descrição da Refeição": "Sólido Proteico",
-            "Meta Técnica": "Preservação de Músculo"
+          "nome": "Stomach Vacuum",
+          "slug": "Vacuum",
+          "wgerId": 82,
+          "series": "3x30s",
+          "obs": "Em Jejum"
         },
         {
-            "Horário": "19:00",
-            "Categoria": "Hidratação",
-            "Descrição da Refeição": "500ml de água",
-            "Meta Técnica": "Redução de Retenção"
-        },
-        {
-            "Horário": "20:00",
-            "Categoria": "JANTAR",
-            "Descrição da Refeição": "Sólido Leve",
-            "Meta Técnica": "Queima de Gordura Noturna"
-        },
-        {
-            "Horário": "21:30",
-            "Categoria": "Sono",
-            "Descrição da Refeição": "Chá de Camomila/Mulungu (sem açúcar)",
-            "Meta Técnica": "Higiene do Sono"
+          "nome": "Elevação de Pernas",
+          "slug": "Hanging Leg Raise",
+          "wgerId": 283,
+          "series": "4x15",
+          "obs": "Na Barra Fixa"
         }
-    ],
-    "Treino": [
+      ],
+      "Nutrição (Base: Plano PDF)": "Opção A: Foco em Arroz Integral e Proteína (180g) para força."
+    },
+    {
+      "Dia": "TER",
+      "Atividade Principal": "Corrida Intervalada",
+      "Exercicios": [
         {
-            "Dia": "SEG",
-            "Atividade Principal": "Musculação: Membros Inferiores (Foco em Força)",
-            "Detalhamento do Treino (Prescrição)": "Agachamento Livre (4x10) / Leg Press 45º (3x12) / Stiff (4x10) / Cadeira Extensora (3x15 com Drop-set na última). Descanso: 45-60 segundos. Cadência: 3030.",
-            "Foco de Abdômen (Core)": "Stomach Vacuum: 3x30s (Jejum) + Elevação de Pernas Suspenso (Infra): 4x15 na Barra Fixa.",
-            "Nutrição (Base: Plano PDF)": "Opção A: Foco em Arroz Integral e Proteína (180g) para suporte ao treino de força."
+          "nome": "Aquecimento",
+          "slug": "Walking, Treadmill",
+          "wgerId": 1115,
+          "series": "5 min",
+          "obs": "Trote muito leve"
         },
         {
-            "Dia": "TER",
-            "Atividade Principal": "Corrida: Intervalada (Queima de Gordura)",
-            "Detalhamento do Treino (Prescrição)": "Aquecimento 5' + 10 séries de (2' Trote Leve / 1' Caminhada). Esforço 6-7. Foco em ativação da lipase e segurança articular.",
-            "Foco de Abdômen (Core)": "Prancha Abdominal Ventral: 4x45s. Diferencial: Contrair glúteo e empurrar cotovelos contra o chão.",
-            "Nutrição (Base: Plano PDF)": "Opção B: Batata Doce e Peixe. Controle glicêmico para otimizar a queima de gordura pós-corrida."
+          "nome": "Corrida (Tiro)",
+          "slug": "Running",
+          "wgerId": 908,
+          "series": "10x 2 min",
+          "obs": "Esforço 6-7"
         },
         {
-            "Dia": "QUA",
-            "Atividade Principal": "Musculação: Membros Superiores (Foco em Postura)",
-            "Detalhamento do Treino (Prescrição)": "Bi-set: Supino Reto + Remada Curvada (3x10) / Desenvolvimento Ombros (3x12) / Pulldown Puxada Alta (4x12). Descanso: 45-60 segundos.",
-            "Foco de Abdômen (Core)": "Elevação de Pernas Suspenso: 4x15. Foco na fase excêntrica (descida lenta) para definição da linha infra.",
-            "Nutrição (Base: Plano PDF)": "Opção A: Carboidrato integral no almoço para recuperação muscular e síntese proteica."
+          "nome": "Caminhada (Recuperação)",
+          "slug": "Walking, Treadmill",
+          "wgerId": 1104,
+          "series": "10x 1 min",
+          "obs": "Ativação da Lipase"
         },
         {
-            "Dia": "QUI",
-            "Atividade Principal": "Corrida: LISS (Low Intensity Steady State)",
-            "Detalhamento do Treino (Prescrição)": "30 a 35 minutos contínuos. Zona 2 do Garmin (130-140 bpm). Esforço 5. Ritmo confortável para oxidação direta de gordura.",
-            "Foco de Abdômen (Core)": "Stomach Vacuum: 3x30s (Jejum) para fortalecimento do músculo transverso.",
-            "Nutrição (Base: Plano PDF)": "Opção B: Proteína limpa e Vegetais. Redução de carboidratos para manter o corpo em estado de queima."
-        },
-        {
-            "Dia": "SEX",
-            "Atividade Principal": "Funcional / Full Body (Alta Densidade)",
-            "Detalhamento do Treino (Prescrição)": "Levantamento Terra (4x6) / Kettlebell Swing (4x20) / Burpees (4x15) / Afundo (3x20 passos). Descanso: 60 segundos.",
-            "Foco de Abdômen (Core)": "Circuito: Escalador (Mountain Climber) + Prancha Ventral (3 Rounds sem descanso).",
-            "Nutrição (Base: Plano PDF)": "Opção A: Suporte calórico para o alto gasto energético do treino de corpo inteiro."
-        },
-        {
-            "Dia": "SÁB",
-            "Atividade Principal": "Corrida: Longão de Base",
-            "Detalhamento do Treino (Prescrição)": "45 a 50 minutos. Ritmo constante. Foco em resistência aeróbica e tempo sob esforço. Esforço 5-6.",
-            "Foco de Abdômen (Core)": "Prancha Lateral: 3x45s de cada lado para fortalecimento de oblíquos e linha de cintura.",
-            "Nutrição (Base: Plano PDF)": "Opção B: Foco em proteínas de alta absorção e vegetais fibrosos (Brócolis/Aspargos)."
-        },
-        {
-            "Dia": "DOM",
-            "Atividade Principal": "Descanso Ativo",
-            "Detalhamento do Treino (Prescrição)": "30 minutos de Caminhada Leve ao ar livre. Esforço 2-3. Foco em recuperação sistêmica.",
-            "Foco de Abdômen (Core)": "Recuperação muscular ativa.",
-            "Nutrição (Base: Plano PDF)": "Opção B: Jejum intermitente opcional ou refeições leves conforme o guia alimentar."
-        },
-        {
-            "Dia": "NOTAS ESTRATÉGICAS PARA OS 72KG",
-            "Atividade Principal": "1. EFICIÊNCIA CARDIOVASCULAR: O treino de Terça e Quinta ensina o corpo a usar gordura abdominal como combustível primário.",
-            "Detalhamento do Treino (Prescrição)": "2. DENSIDADE NA MUSCULAÇÃO: Mantenha o descanso rigoroso de 45-60 segundos para manter o metabolismo elevado.",
-            "Foco de Abdômen (Core)": "3. ESTÉTICA DA CINTURA: O Stomach Vacuum é inegociável para fortalecer o transverso e murchar a barriga.",
-            "Nutrição (Base: Plano PDF)": "4. HIDRATAÇÃO: Beba 500ml de água antes de cada corrida para otimizar o transporte de oxigênio."
+          "nome": "Prancha Abdominal",
+          "slug": "Plank",
+          "wgerId": 1317,
+          "series": "4x45s",
+          "obs": "Contrair glúteo e empurrar cotovelos"
         }
-    ],
+      ],
+      "Nutrição (Base: Plano PDF)": "Opção B: Batata Doce e Peixe. Controle glicémico."
+    },
+    {
+      "Dia": "QUA",
+      "Atividade Principal": "Membros Superiores (Postura)",
+      "Exercicios": [
+        {
+          "nome": "Supino Reto",
+          "slug": "Barbell Bench Press",
+          "wgerId": 73,
+          "series": "3x10",
+          "obs": "Bi-set com Remada"
+        },
+        {
+          "nome": "Remada Curvada",
+          "slug": "Bent Over Barbell Row",
+          "wgerId": 83,
+          "series": "3x10",
+          "obs": "Foco em postura"
+        },
+        {
+          "nome": "Desenvolvimento Ombros",
+          "slug": "Dumbbell Shoulder Press",
+          "wgerId": 20,
+          "series": "3x12",
+          "obs": "Controle na descida"
+        },
+        {
+          "nome": "Pulldown",
+          "slug": "Wide-Grip Lat Pulldown",
+          "wgerId": 1806,
+          "series": "4x12",
+          "obs": "Puxada Alta"
+        },
+        {
+          "nome": "Elevação de Pernas",
+          "slug": "Hanging Leg Raise",
+          "wgerId": 283,
+          "series": "4x15",
+          "obs": "Fase excêntrica lenta"
+        }
+      ],
+      "Nutrição (Base: Plano PDF)": "Opção A: Carboidrato integral para recuperação muscular."
+    },
+    {
+      "Dia": "QUI",
+      "Atividade Principal": "Corrida LISS",
+      "Exercicios": [
+        {
+          "nome": "Corrida Constante",
+          "slug": "Jogging",
+          "wgerId": 319,
+          "series": "35 min",
+          "obs": "Zona 2 (130-140 bpm)"
+        },
+        {
+          "nome": "Stomach Vacuum",
+          "slug": "Stomach Vacuum",
+          "wgerId": 82,
+          "series": "3x30s",
+          "obs": "Fortalecimento do transverso"
+        }
+      ],
+      "Nutrição (Base: Plano PDF)": "Opção B: Proteína limpa e Vegetais. Baixo carbo."
+    },
+    {
+      "Dia": "SEX",
+      "Atividade Principal": "Funcional / Full Body",
+      "Exercicios": [
+        {
+          "nome": "Levantamento Terra",
+          "slug": "Axle Deadlift",
+          "wgerId": 184,
+          "series": "4x6",
+          "obs": "Alta densidade"
+        },
+        {
+          "nome": "Kettlebell Swing",
+          "slug": "Kettlebell Swing",
+          "wgerId": 960,
+          "series": "4x20",
+          "obs": "Explosão"
+        },
+        {
+          "nome": "Burpees",
+          "slug": "Burpee",
+          "wgerId": 132,
+          "series": "4x15",
+          "obs": "Metabólico"
+        },
+        {
+          "nome": "Afundo",
+          "slug": "Dumbbell Lunges",
+          "wgerId": 984,
+          "series": "3x20 pass.",
+          "obs": "Controle de equilíbrio"
+        },
+        {
+          "nome": "Mountain Climber",
+          "slug": "Mountain Climbers",
+          "wgerId": 996,
+          "series": "3 Rounds",
+          "obs": "Circuito sem descanso"
+        }
+      ],
+      "Nutrição (Base: Plano PDF)": "Opção A: Suporte calórico para alto gasto energético."
+    },
+    {
+      "Dia": "SÁB",
+      "Atividade Principal": "Corrida: Longão",
+      "Exercicios": [
+        {
+          "nome": "Corrida de Base",
+          "slug": "Running, Treadmill",
+          "wgerId": 908,
+          "series": "50 min",
+          "obs": "Ritmo constante. Esforço 5-6"
+        },
+        {
+          "nome": "Prancha Lateral",
+          "slug": "Side Bridge",
+          "wgerId": 1321,
+          "series": "3x45s (Lado)",
+          "obs": "Fortalecimento de oblíquos"
+        }
+      ],
+      "Nutrição (Base: Plano PDF)": "Opção B: Foco em proteínas de alta absorção."
+    },
+    {
+      "Dia": "DOM",
+      "Atividade Principal": "Descanso Ativo",
+      "Exercicios": [
+        {
+          "nome": "Caminhada Leve",
+          "slug": "Walking, Treadmill",
+          "wgerId": 1104,
+          "series": "30 min",
+          "obs": "Recuperação sistémica"
+        }
+      ],
+      "Nutrição (Base: Plano PDF)": "Opção B: Jejum intermitente opcional."
+    }
+  ],
   "Compras": [
     {
       "Secao": "Compras para o Café da Manhã",
@@ -186,11 +354,11 @@
       "Meta de Hidratação": "2.5L a 3L de água (Indispensável)"
     }
   ],
-    "Notas": {
-        "Hidratação": "Mínimo 3L/dia. Beber 500ml 30min antes das corridas.",
-        "Cardio": "Não ultrapassar a Zona 2 no LISS para preservar massa magra.",
-        "Musculação": "Cadência 3030 (3s descida / 3s subida) para máximo gasto metabólico.",
-        "Abdómen": "O segredo para 'secar' a barriga é o transverso (Vacuum) e a insulina baixa no jantar.",
-        "Refeição": "Água (2.5L a 3L) \nProteína em todas as refeições\nCaminhada/Treino (30 min)\nSono (mínimo 6h)\nZero Açúcar/Álcool"
-    }
+  "Notas": {
+    "Hidratação": "Mínimo 3L/dia. Beber 500ml 30min antes das corridas.",
+    "Cardio": "Não ultrapassar a Zona 2 no LISS para preservar massa magra.",
+    "Musculação": "Cadência 3030 (3s descida / 3s subida) para máximo gasto metabólico.",
+    "Abdómen": "O segredo para 'secar' a barriga é o transverso (Vacuum) e a insulina baixa no jantar.",
+    "Refeição": "Água (2.5L a 3L) \nProteína em todas as refeições\nCaminhada/Treino (30 min)\nSono (mínimo 6h)\nZero Açúcar/Álcool"
+  }
 }
