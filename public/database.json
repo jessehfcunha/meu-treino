@@ -99,7 +99,7 @@
   "Treino": [
     {
       "Dia": "SEG",
-      "Atividade Principal": "Membros Inferiores (Força)",
+      "Atividade Principal": "Membros Inferiores + Bíceps",
       "Exercicios": [
         {
           "nome": "Agachamento Livre",
@@ -123,11 +123,18 @@
           "obs": "Foco em posterior"
         },
         {
-          "nome": "Cadeira Extensora",
-          "slug": "Leg Extensions",
-          "wgerId": 369,
-          "series": "3x15",
-          "obs": "Drop-set na última"
+          "nome": "Panturrilha em Pé",
+          "slug": "Calf Raises",
+          "wgerId": 145,
+          "series": "4x15",
+          "obs": "Pico de contração"
+        },
+        {
+          "nome": "Rosca Direta",
+          "slug": "Biceps Curls",
+          "wgerId": 161,
+          "series": "3x12",
+          "obs": "Bíceps (Braços)"
         },
         {
           "nome": "Stomach Vacuum",
@@ -162,7 +169,7 @@
           "slug": "Running",
           "wgerId": 908,
           "series": "10x 2 min",
-          "obs": "Esforço 6-7"
+          "obs": "Esforço 6-7 (Zona 3)"
         },
         {
           "nome": "Caminhada (Recuperação)",
@@ -183,7 +190,7 @@
     },
     {
       "Dia": "QUA",
-      "Atividade Principal": "Membros Superiores (Postura)",
+      "Atividade Principal": "Membros Superiores + Tríceps",
       "Exercicios": [
         {
           "nome": "Supino Reto",
@@ -205,6 +212,20 @@
           "wgerId": 20,
           "series": "3x12",
           "obs": "Controle na descida"
+        },
+        {
+          "nome": "Tríceps Corda",
+          "slug": "Triceps Pushdown",
+          "wgerId": 172,
+          "series": "3x12",
+          "obs": "Tríceps (Braços)"
+        },
+        {
+          "nome": "Tríceps Testa",
+          "slug": "Triceps Extensions",
+          "wgerId": 168,
+          "series": "3x12",
+          "obs": "Tríceps (Braços)"
         },
         {
           "nome": "Pulldown",
@@ -246,7 +267,7 @@
     },
     {
       "Dia": "SEX",
-      "Atividade Principal": "Funcional / Full Body",
+      "Atividade Principal": "Full Body + Ombros e Braços",
       "Exercicios": [
         {
           "nome": "Levantamento Terra",
@@ -254,6 +275,13 @@
           "wgerId": 184,
           "series": "4x6",
           "obs": "Alta densidade"
+        },
+        {
+          "nome": "Elevação Lateral",
+          "slug": "Lateral Raise",
+          "wgerId": 150,
+          "series": "3x15",
+          "obs": "Estética Ombros em V"
         },
         {
           "nome": "Kettlebell Swing",
@@ -270,11 +298,18 @@
           "obs": "Metabólico"
         },
         {
-          "nome": "Afundo",
-          "slug": "Dumbbell Lunges",
-          "wgerId": 984,
-          "series": "3x20 pass.",
-          "obs": "Controle de equilíbrio"
+          "nome": "Rosca Martelo",
+          "slug": "Hammer Curls",
+          "wgerId": 165,
+          "series": "3x12",
+          "obs": "Bíceps/Antebraço"
+        },
+        {
+          "nome": "Tríceps Francês",
+          "slug": "Triceps Extension",
+          "wgerId": 170,
+          "series": "3x12",
+          "obs": "Tríceps (Braços)"
         },
         {
           "nome": "Mountain Climber",
@@ -288,7 +323,7 @@
     },
     {
       "Dia": "SÁB",
-      "Atividade Principal": "Corrida: Longão",
+      "Atividade Principal": "Corrida: Longão Endurance",
       "Exercicios": [
         {
           "nome": "Corrida de Base",
@@ -315,11 +350,18 @@
           "nome": "Caminhada Leve",
           "slug": "Walking, Treadmill",
           "wgerId": 1104,
-          "series": "30 min",
+          "series": "30-40 min",
           "obs": "Recuperação sistémica"
+        },
+        {
+          "nome": "Mobilidade Quadril",
+          "slug": "Mobility",
+          "wgerId": 1500,
+          "series": "10 min",
+          "obs": "Soltura articular"
         }
       ],
-      "Nutrição (Base: Plano PDF)": "Opção B: Jejum intermitente opcional."
+      "Nutrição (Base: Plano PDF)": "Opção B: Vegetais e Proteína."
     }
   ],
   "Compras": [
