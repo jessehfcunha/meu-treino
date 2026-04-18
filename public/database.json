@@ -99,28 +99,77 @@
   "Treino": [
     {
       "Dia": "SEG",
-      "Atividade Principal": "Membros Inferiores + Bíceps",
+      "Atividade Principal": "Musculação: Push (Peito, Ombros e Tríceps)",
+      "Exercicios": [
+        {
+          "nome": "Supino Reto",
+          "slug": "Barbell Bench Press",
+          "wgerId": 73,
+          "series": "4x10",
+          "obs": "Foco em peitoral"
+        },
+        {
+          "nome": "Desenvolvimento",
+          "slug": "Dumbbell Shoulder Press",
+          "wgerId": 20,
+          "series": "3x12",
+          "obs": "Ombros"
+        },
+        {
+          "nome": "Elevação Lateral",
+          "slug": "Lateral Raise",
+          "wgerId": 150,
+          "series": "3x15",
+          "obs": "Estética ombros"
+        },
+        {
+          "nome": "Tríceps Corda",
+          "slug": "Triceps Pushdown",
+          "wgerId": 172,
+          "series": "3x12",
+          "obs": "Tríceps"
+        },
+        {
+          "nome": "Stomach Vacuum",
+          "slug": "Vacuum",
+          "wgerId": 82,
+          "series": "3x30s",
+          "obs": "Vácuo abdominal"
+        },
+        {
+          "nome": "Abdominal Supra",
+          "slug": "Crunch",
+          "wgerId": 273,
+          "series": "4x20",
+          "obs": "Reto abdominal"
+        }
+      ],
+      "Nutrição (Base: Plano PDF)": "Opção A: Carboidrato moderado para o treino de empurrar."
+    },
+    {
+      "Dia": "TER",
+      "Atividade Principal": "Musculação: Legs (Membros Inferiores Completos)",
       "Exercicios": [
         {
           "nome": "Agachamento Livre",
           "slug": "Barbell Squat",
           "wgerId": 615,
           "series": "4x10",
-          "obs": "Cadência 3030"
+          "obs": "Maior gasto calórico"
         },
         {
           "nome": "Leg Press 45º",
           "slug": "LegPress",
           "wgerId": 371,
           "series": "3x12",
-          "obs": "Descanso 45-60s"
+          "obs": "Quadríceps"
         },
         {
           "nome": "Stiff",
-          "slug": "Stiff-Legged Barbell Deadlift",
+          "slug": "Stiff-Legged Deadlift",
           "wgerId": 627,
-          "series": "4x10",
-          "obs": "Foco em posterior"
+          "series": "3x10",
+          "obs": "Posteriores"
         },
         {
           "nome": "Panturrilha em Pé",
@@ -130,217 +179,154 @@
           "obs": "Pico de contração"
         },
         {
-          "nome": "Rosca Direta",
-          "slug": "Biceps Curls",
-          "wgerId": 161,
-          "series": "3x12",
-          "obs": "Bíceps (Braços)"
-        },
-        {
-          "nome": "Stomach Vacuum",
-          "slug": "Vacuum",
-          "wgerId": 82,
-          "series": "3x30s",
-          "obs": "Em Jejum"
-        },
-        {
           "nome": "Elevação de Pernas",
           "slug": "Hanging Leg Raise",
           "wgerId": 283,
           "series": "4x15",
-          "obs": "Na Barra Fixa"
+          "obs": "Infra abdominal"
         }
       ],
-      "Nutrição (Base: Plano PDF)": "Opção A: Foco em Arroz Integral e Proteína (180g) para força."
+      "Nutrição (Base: Plano PDF)": "Opção A: Foco em Arroz Integral (Dia de perna exige energia)."
     },
     {
-      "Dia": "TER",
-      "Atividade Principal": "Corrida Intervalada",
+      "Dia": "QUA",
+      "Atividade Principal": "Corrida Intervalada (Cardio Metabólico)",
       "Exercicios": [
         {
           "nome": "Aquecimento",
-          "slug": "Walking, Treadmill",
+          "slug": "Walking",
           "wgerId": 1115,
           "series": "5 min",
-          "obs": "Trote muito leve"
+          "obs": "Trote leve"
         },
         {
           "nome": "Corrida (Tiro)",
           "slug": "Running",
           "wgerId": 908,
           "series": "10x 2 min",
-          "obs": "Esforço 6-7 (Zona 3)"
+          "obs": "Esforço 7-8"
         },
         {
-          "nome": "Caminhada (Recuperação)",
-          "slug": "Walking, Treadmill",
+          "nome": "Caminhada (Recup)",
+          "slug": "Walking",
           "wgerId": 1104,
           "series": "10x 1 min",
-          "obs": "Ativação da Lipase"
-        },
-        {
-          "nome": "Prancha Abdominal",
-          "slug": "Plank",
-          "wgerId": 1317,
-          "series": "4x45s",
-          "obs": "Contrair glúteo e empurrar cotovelos"
-        }
-      ],
-      "Nutrição (Base: Plano PDF)": "Opção B: Batata Doce e Peixe. Controle glicémico."
-    },
-    {
-      "Dia": "QUA",
-      "Atividade Principal": "Membros Superiores + Tríceps",
-      "Exercicios": [
-        {
-          "nome": "Supino Reto",
-          "slug": "Barbell Bench Press",
-          "wgerId": 73,
-          "series": "3x10",
-          "obs": "Bi-set com Remada"
-        },
-        {
-          "nome": "Remada Curvada",
-          "slug": "Bent Over Barbell Row",
-          "wgerId": 83,
-          "series": "3x10",
-          "obs": "Foco em postura"
-        },
-        {
-          "nome": "Desenvolvimento Ombros",
-          "slug": "Dumbbell Shoulder Press",
-          "wgerId": 20,
-          "series": "3x12",
-          "obs": "Controle na descida"
-        },
-        {
-          "nome": "Tríceps Corda",
-          "slug": "Triceps Pushdown",
-          "wgerId": 172,
-          "series": "3x12",
-          "obs": "Tríceps (Braços)"
-        },
-        {
-          "nome": "Tríceps Testa",
-          "slug": "Triceps Extensions",
-          "wgerId": 168,
-          "series": "3x12",
-          "obs": "Tríceps (Braços)"
-        },
-        {
-          "nome": "Pulldown",
-          "slug": "Wide-Grip Lat Pulldown",
-          "wgerId": 1806,
-          "series": "4x12",
-          "obs": "Puxada Alta"
-        },
-        {
-          "nome": "Elevação de Pernas",
-          "slug": "Hanging Leg Raise",
-          "wgerId": 283,
-          "series": "4x15",
-          "obs": "Fase excêntrica lenta"
-        }
-      ],
-      "Nutrição (Base: Plano PDF)": "Opção A: Carboidrato integral para recuperação muscular."
-    },
-    {
-      "Dia": "QUI",
-      "Atividade Principal": "Corrida LISS",
-      "Exercicios": [
-        {
-          "nome": "Corrida Constante",
-          "slug": "Jogging",
-          "wgerId": 319,
-          "series": "35 min",
-          "obs": "Zona 2 (130-140 bpm)"
+          "obs": "Recuperação ativa"
         },
         {
           "nome": "Stomach Vacuum",
-          "slug": "Stomach Vacuum",
+          "slug": "Vacuum",
           "wgerId": 82,
-          "series": "3x30s",
-          "obs": "Fortalecimento do transverso"
+          "series": "3x40s",
+          "obs": "Foco no transverso"
         }
       ],
-      "Nutrição (Base: Plano PDF)": "Opção B: Proteína limpa e Vegetais. Baixo carbo."
+      "Nutrição (Base: Plano PDF)": "Opção B: Baixo carbo para priorizar queima de gordura."
     },
     {
-      "Dia": "SEX",
-      "Atividade Principal": "Full Body + Ombros e Braços",
+      "Dia": "QUI",
+      "Atividade Principal": "Musculação: Pull (Costas, Bíceps e Antebraço)",
       "Exercicios": [
         {
-          "nome": "Levantamento Terra",
-          "slug": "Axle Deadlift",
-          "wgerId": 184,
-          "series": "4x6",
-          "obs": "Alta densidade"
+          "nome": "Puxada Alta",
+          "slug": "Lat Pulldown",
+          "wgerId": 1806,
+          "series": "4x10",
+          "obs": "Dorsais"
         },
         {
-          "nome": "Elevação Lateral",
-          "slug": "Lateral Raise",
-          "wgerId": 150,
-          "series": "3x15",
-          "obs": "Estética Ombros em V"
+          "nome": "Remada Baixa",
+          "slug": "Seated Row",
+          "wgerId": 127,
+          "series": "3x12",
+          "obs": "Espessura de costas"
         },
         {
-          "nome": "Kettlebell Swing",
-          "slug": "Kettlebell Swing",
-          "wgerId": 960,
-          "series": "4x20",
-          "obs": "Explosão"
-        },
-        {
-          "nome": "Burpees",
-          "slug": "Burpee",
-          "wgerId": 132,
-          "series": "4x15",
-          "obs": "Metabólico"
+          "nome": "Rosca Direta",
+          "slug": "Biceps Curls",
+          "wgerId": 161,
+          "series": "3x12",
+          "obs": "Bíceps"
         },
         {
           "nome": "Rosca Martelo",
           "slug": "Hammer Curls",
           "wgerId": 165,
           "series": "3x12",
-          "obs": "Bíceps/Antebraço"
+          "obs": "Antebraço/Bíceps"
         },
         {
-          "nome": "Tríceps Francês",
-          "slug": "Triceps Extension",
-          "wgerId": 170,
+          "nome": "Prancha Abdominal",
+          "slug": "Plank",
+          "wgerId": 1317,
+          "series": "4x60s",
+          "obs": "Estabilidade core"
+        }
+      ],
+      "Nutrição (Base: Plano PDF)": "Opção A: Suporte para treino de tração."
+    },
+    {
+      "Dia": "SEX",
+      "Atividade Principal": "Musculação: Upper Body (Full Superiores)",
+      "Exercicios": [
+        {
+          "nome": "Supino Inclinado",
+          "slug": "Incline Press",
+          "wgerId": 75,
+          "series": "3x10",
+          "obs": "Parte superior peitoral"
+        },
+        {
+          "nome": "Puxada Triângulo",
+          "slug": "Close Grip Pulldown",
+          "wgerId": 181,
           "series": "3x12",
-          "obs": "Tríceps (Braços)"
+          "obs": "Foco lats"
+        },
+        {
+          "nome": "Tríceps Testa",
+          "slug": "Triceps Extensions",
+          "wgerId": 168,
+          "series": "3x12",
+          "obs": "Tríceps"
+        },
+        {
+          "nome": "Rosca Inversa",
+          "slug": "Reverse Curl",
+          "wgerId": 167,
+          "series": "3x12",
+          "obs": "Bíceps/Braquial"
         },
         {
           "nome": "Mountain Climber",
           "slug": "Mountain Climbers",
           "wgerId": 996,
-          "series": "3 Rounds",
-          "obs": "Circuito sem descanso"
+          "series": "4x40s",
+          "obs": "Queima abdominal"
         }
       ],
-      "Nutrição (Base: Plano PDF)": "Opção A: Suporte calórico para alto gasto energético."
+      "Nutrição (Base: Plano PDF)": "Opção A: Suporte para volume de superiores."
     },
     {
       "Dia": "SÁB",
-      "Atividade Principal": "Corrida: Longão Endurance",
+      "Atividade Principal": "Corrida LISS (Longão)",
       "Exercicios": [
         {
-          "nome": "Corrida de Base",
-          "slug": "Running, Treadmill",
-          "wgerId": 908,
-          "series": "50 min",
-          "obs": "Ritmo constante. Esforço 5-6"
+          "nome": "Corrida Constante",
+          "slug": "Jogging",
+          "wgerId": 319,
+          "series": "45-50 min",
+          "obs": "Zona 2 (Queima de gordura)"
         },
         {
           "nome": "Prancha Lateral",
-          "slug": "Side Bridge",
-          "wgerId": 1321,
+          "slug": "Side Plank",
+          "wgerId": 1318,
           "series": "3x45s (Lado)",
-          "obs": "Fortalecimento de oblíquos"
+          "obs": "Oblíquos"
         }
       ],
-      "Nutrição (Base: Plano PDF)": "Opção B: Foco em proteínas de alta absorção."
+      "Nutrição (Base: Plano PDF)": "Opção B: Foco em proteína alta."
     },
     {
       "Dia": "DOM",
@@ -348,17 +334,17 @@
       "Exercicios": [
         {
           "nome": "Caminhada Leve",
-          "slug": "Walking, Treadmill",
-          "wgerId": 1104,
-          "series": "30-40 min",
-          "obs": "Recuperação sistémica"
+          "slug": "Walking",
+          "wgerId": 1115,
+          "series": "40 min",
+          "obs": "Recuperação ativa"
         },
         {
-          "nome": "Mobilidade Quadril",
+          "nome": "Mobilidade",
           "slug": "Mobility",
           "wgerId": 1500,
           "series": "10 min",
-          "obs": "Soltura articular"
+          "obs": "Alongamento"
         }
       ],
       "Nutrição (Base: Plano PDF)": "Opção B: Vegetais e Proteína."
