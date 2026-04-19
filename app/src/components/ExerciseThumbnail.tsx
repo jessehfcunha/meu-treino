@@ -63,13 +63,22 @@ const ExerciseThumbnail = ({ exerciseName, fallbackId }: Props) => {
     );
 
   return (
-    <div className="relative w-full h-48 overflow-hidden rounded-t-[2.5rem] border-b border-white/5 bg-slate-900/50 flex items-center justify-center group">
+    <div className="relative w-full h-64 overflow-hidden rounded-t-[2.5rem] border-b border-white/5 bg-slate-900/50 flex items-center justify-center group">
       {images.length > 0 ? (
         <>
+          {/* Design Premium: Fundo desfocado para preencher lacunas de proporção */}
+          <div className="absolute inset-0 z-0 overflow-hidden">
+            <img
+              src={images[currentIndex]}
+              alt="Fundo"
+              className="w-full h-full object-cover blur-2xl opacity-40 scale-110"
+            />
+          </div>
+
           <img
             src={images[currentIndex]}
             alt="Treino"
-            className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-300"
+            className="relative z-10 w-full h-full object-contain grayscale-[0.1] group-hover:grayscale-0 transition-all duration-500 drop-shadow-[0_0_30px_rgba(0,0,0,0.5)]"
           />
           
           {/* Botão de info (só aparece se houver instruções) */}

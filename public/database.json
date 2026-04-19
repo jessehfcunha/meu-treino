@@ -117,7 +117,7 @@
         },
         {
           "nome": "Elevação Lateral",
-          "slug": "Lateral Raise",
+          "slug": "Lateral_Raise",
           "wgerId": 150,
           "series": "3x15",
           "obs": "Estética ombros"
@@ -166,7 +166,7 @@
         },
         {
           "nome": "Stiff",
-          "slug": "Stiff-Legged Deadlift",
+          "slug": "Stiff",
           "wgerId": 627,
           "series": "3x10",
           "obs": "Posteriores"
@@ -194,7 +194,7 @@
       "Exercicios": [
         {
           "nome": "Aquecimento",
-          "slug": "Walking",
+          "slug": "Recovery_Walk",
           "wgerId": 1115,
           "series": "5 min",
           "obs": "Trote leve"
@@ -208,7 +208,7 @@
         },
         {
           "nome": "Caminhada (Recup)",
-          "slug": "Walking",
+          "slug": "Recovery_Walk",
           "wgerId": 1104,
           "series": "10x 1 min",
           "obs": "Recuperação ativa"
@@ -236,14 +236,14 @@
         },
         {
           "nome": "Remada Baixa",
-          "slug": "Seated Row",
+          "slug": "Remada_Baixa",
           "wgerId": 127,
           "series": "3x12",
           "obs": "Espessura de costas"
         },
         {
           "nome": "Rosca Direta",
-          "slug": "Biceps Curls",
+          "slug": "Rosca_Direta",
           "wgerId": 161,
           "series": "3x12",
           "obs": "Bíceps"
@@ -270,22 +270,22 @@
       "Atividade Principal": "Musculação: Upper Body (Full Superiores)",
       "Exercicios": [
         {
-          "nome": "Supino Inclinado",
-          "slug": "Incline Press",
+          "nome": "Supino Inclinado Barra",
+          "slug": "Supino_Inclinado_Barra",
           "wgerId": 75,
           "series": "3x10",
           "obs": "Parte superior peitoral"
         },
         {
           "nome": "Puxada Triângulo",
-          "slug": "Close Grip Pulldown",
+          "slug": "Puxada_Triangulo",
           "wgerId": 181,
           "series": "3x12",
           "obs": "Foco lats"
         },
         {
           "nome": "Tríceps Testa",
-          "slug": "Triceps Extensions",
+          "slug": "Triceps_Testa",
           "wgerId": 168,
           "series": "3x12",
           "obs": "Tríceps"
@@ -313,7 +313,7 @@
       "Exercicios": [
         {
           "nome": "Corrida Constante",
-          "slug": "Jogging",
+          "slug": "Corrida",
           "wgerId": 319,
           "series": "45-50 min",
           "obs": "Zona 2 (Queima de gordura)"
@@ -334,7 +334,7 @@
       "Exercicios": [
         {
           "nome": "Caminhada Leve",
-          "slug": "Walking",
+          "slug": "Recovery_Walk",
           "wgerId": 1115,
           "series": "40 min",
           "obs": "Recuperação ativa"
