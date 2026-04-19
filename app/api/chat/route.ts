@@ -14,7 +14,7 @@ export async function POST(request: Request) {
       ? "https://api.groq.com/openai/v1/chat/completions"
       : "http://localhost:11434/v1/chat/completions";
 
-    const model = useGroq ? "llama3-8b-8192" : "llama3";
+    const model = useGroq ? "llama-3.1-8b-instant" : "llama3";
 
     const headers: Record<string, string> = {
       "Content-Type": "application/json",
