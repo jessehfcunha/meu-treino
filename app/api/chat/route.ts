@@ -4,24 +4,24 @@ export async function POST(request: Request) {
   try {
     const { message, context } = await request.json();
 
-    // Detecta se o ambiente é produção (Vercel)
+    const apiKey = process.env.GROQ_API_KEY;
     const isProd = process.env.NODE_ENV === "production";
 
-    // Configurações de endpoint e modelo
-    // No Groq usamos o modelo Llama 3 8b. No Ollama, o que você tiver baixado.
-    const apiUrl = isProd
+    // Prioriza Groq se a chave estiver disponível, senão usa Ollama local
+    const useGroq = !!apiKey;
+
+    const apiUrl = useGroq
       ? "https://api.groq.com/openai/v1/chat/completions"
       : "http://localhost:11434/v1/chat/completions";
 
-    const model = isProd ? "llama3-8b-8192" : "llama3";
+    const model = useGroq ? "llama3-8b-8192" : "llama3";
 
     const headers: Record<string, string> = {
       "Content-Type": "application/json",
     };
 
-    // Adiciona a chave de API apenas se estiver em produção
-    if (isProd && process.env.GROQ_API_KEY) {
-      headers["Authorization"] = `Bearer ${process.env.GROQ_API_KEY}`;
+    if (useGroq) {
+      headers["Authorization"] = `Bearer ${apiKey}`;
     }
 
     const aiResponse = await fetch(apiUrl, {
@@ -33,7 +33,7 @@ export async function POST(request: Request) {
           {
             role: "system",
             content: `Você é o PerformanceAI, um treinador de elite focado em biohacking e performance. 
-                      Use este contexto do plano do usuário para responder: ${JSON.stringify(context)}.
+                      Use este contexto do usuário para responder: ${JSON.stringify(context)}.
                       Responda de forma curta, técnica, direta e motivadora.`,
           },
           {
@@ -42,14 +42,13 @@ export async function POST(request: Request) {
           },
         ],
         temperature: 0.7,
-        stream: false,
       }),
     });
 
     if (!aiResponse.ok) {
-      const errorData = await aiResponse.json();
-      console.error("Erro da API de IA:", errorData);
-      throw new Error("Falha na comunicação com o provedor de IA");
+      const errorText = await aiResponse.text();
+      console.error("Erro da API de IA:", errorText);
+      throw new Error(`Falha na API: ${aiResponse.status} - ${errorText}`);
     }
 
     const data = await aiResponse.json();
