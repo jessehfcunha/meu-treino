@@ -125,7 +125,7 @@ export const AIAgent = ({ userContext, isOpen, setIsOpen }: AIAgentProps) => {
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleAsk()}
             placeholder="Como otimizar meu treino?"
-            className="w-full bg-slate-900 border border-white/5 rounded-2xl py-4 pl-5 pr-14 text-xs text-white outline-none focus:border-blue-500/50 transition-all italic"
+            className="w-full bg-slate-900 border border-white/5 rounded-2xl py-4 pl-5 pr-14 text-base text-white outline-none focus:border-blue-500/50 transition-all italic"
           />
           <button
             onClick={handleAsk}
